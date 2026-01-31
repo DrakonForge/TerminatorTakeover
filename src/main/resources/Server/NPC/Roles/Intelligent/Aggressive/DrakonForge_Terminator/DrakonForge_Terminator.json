@@ -4,11 +4,11 @@
   "Modify": {
     "MaxHealth": 150,
     "MaxSpeed": 10,
-    "AttackDistance": 2,
     "DefaultNPCAttitude": "Hostile",
     "DefaultPlayerAttitude": "Hostile",
-    "RunThreshold": 0,
+    "RunThreshold": 0.7,
     "HearingRange": 8,
+    "AlertedRange": 30,
     "ViewSector": 270,
     "WakingPeriod": [0, 24],
     "DropList": "Drop_DrakonForge_Terminator",
