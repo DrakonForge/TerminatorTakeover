@@ -1,0 +1,52 @@
+{
+  "Type": "Variant",
+  "Reference": "Template_DrakonForge_Terminator",
+  "Modify": {
+    "Appearance": "PlayerTestModel_V",
+    "DropList": "Drop_DrakonForge_Terminator",
+    "Weapons": [],
+    "ViewSector": 270,
+    "HearingRange": 4,
+    "AttackSequence": "Component_Instruction_Attack_Sequence_DrakonForge_Terminator",
+    "TargetGroups": [
+      "Outlander"
+    ],
+    "ChestBlockSet": "Trork_Chest",
+    "BedBlockSet": "Trork_Bedroll",
+    "CampfireBlockSet": "Trork_Campfire",
+    "SparTargetGroups": [],
+    "UnderlingGroups": [],
+    "DisableDamageGroups": [
+      "Self"
+    ],
+    "AttitudeGroup": "DrakonForge_Terminator",
+    "AttackDistance": 2.5,
+    "IdleMotionComponent": "$Null",
+    "MaxHealth": 103,
+    "IsMemory": false,
+    "MemoriesCategory": "Other",
+    "_InteractionVars": {
+      "Melee_Damage": {
+        "Interactions": [
+          {
+            "Parent": "NPC_Attack_Melee_Damage",
+            "DamageCalculator": {
+              "BaseDamage": {
+                "Physical": 27
+              }
+            }
+          }
+        ]
+      }
+    },
+    "NameTranslationKey": {
+      "Compute": "NameTranslationKey"
+    }
+  },
+  "Parameters": {
+    "NameTranslationKey": {
+      "Value": "server.npcRoles.DrakonForge_Terminator.name",
+      "Description": "Translation key for NPC name display"
+    }
+  }
+}
