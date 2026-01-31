@@ -1,44 +1,36 @@
 {
   "Type": "Variant",
-  "Reference": "Template_DrakonForge_Terminator",
+  "Reference": "Template_Intelligent_DrakonForge_Terminator",
   "Modify": {
-    "Appearance": "PlayerTestModel_V",
-    "DropList": "Drop_DrakonForge_Terminator",
-    "Weapons": [],
+    "MaxHealth": 150,
+    "MaxSpeed": 10,
+    "AttackDistance": 2,
+    "DefaultNPCAttitude": "Hostile",
+    "DefaultPlayerAttitude": "Hostile",
+    "RunThreshold": 0,
+    "HearingRange": 8,
     "ViewSector": 270,
-    "HearingRange": 4,
-    "AttackSequence": "Component_Instruction_Attack_Sequence_DrakonForge_Terminator",
-    "TargetGroups": [
-      "Outlander"
-    ],
-    "ChestBlockSet": "Trork_Chest",
-    "BedBlockSet": "Trork_Bedroll",
-    "CampfireBlockSet": "Trork_Campfire",
-    "SparTargetGroups": [],
-    "UnderlingGroups": [],
+    "WakingPeriod": [0, 24],
+    "DropList": "Drop_DrakonForge_Terminator",
+    "Appearance": "PlayerTestModel_V",
+    "Weapons": [],
+    "OffHand": [],
+    "LeashDistance": 64,
+    "LeashMinPlayerDistance": 4,
+    "DefaultOffHandSlot": -1,
+    "FollowPatrolPath": false,
+    "Patrol": false,
+    "WanderRadius": 15,
+    "WakingIdleBehaviorComponent": "Component_Instruction_Stationary_Idle",
+    "UseCombatActionEvaluator": true,
+    "_CombatConfig": "DrakonForge_Terminator",
+    "ApplySeparation": true,
     "DisableDamageGroups": [
       "Self"
     ],
     "AttitudeGroup": "DrakonForge_Terminator",
-    "AttackDistance": 2.5,
-    "IdleMotionComponent": "$Null",
-    "MaxHealth": 103,
     "IsMemory": false,
     "MemoriesCategory": "Other",
-    "_InteractionVars": {
-      "Melee_Damage": {
-        "Interactions": [
-          {
-            "Parent": "NPC_Attack_Melee_Damage",
-            "DamageCalculator": {
-              "BaseDamage": {
-                "Physical": 27
-              }
-            }
-          }
-        ]
-      }
-    },
     "NameTranslationKey": {
       "Compute": "NameTranslationKey"
     }
