@@ -2,7 +2,7 @@
   "Type": "Variant",
   "Reference": "Template_Intelligent_DrakonForge_Terminator",
   "Modify": {
-    "MaxHealth": 150,
+    "MaxHealth": 160,
     "MaxSpeed": 5,
     "DefaultNPCAttitude": "Hostile",
     "DefaultPlayerAttitude": "Hostile",
@@ -33,8 +33,8 @@
     "NameTranslationKey": {
       "Compute": "NameTranslationKey"
     },
-    "AttackSequence": "Component_Instruction_Attack_Sequence_Outlander_Berserker",
-    "RangedAttackSequence": "Component_Instruction_Attack_Sequence_Outlander_Hunter_Ranged",
+    "AttackSequence": "Component_Instruction_Attack_Sequence_DrakonForge_Terminator_Melee",
+    "RangedAttackSequence": "Component_Instruction_Attack_Sequence_DrakonForge_Terminator_Ranged",
     "AttackDistance": 2.5,
     "AttackPauseRange": [
       1,

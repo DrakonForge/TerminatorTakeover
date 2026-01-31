@@ -1,0 +1,27 @@
+{
+  "Appearance": "DrakonForge_Terminator_Orb",
+  "Radius": 0.1,
+  "Height": 0.2,
+  "PitchAdjustShot": true,
+  "SticksVertically": true,
+  "MuzzleVelocity": 50,
+  "TerminalVelocity": 100,
+  "Gravity": 0,
+  "Damage": 15,
+  "DeathEffectsOnHit": true,
+  "BounceSoundEventId": "SFX_Fireball_Bounce",
+  "MissSoundEventId": "SFX_Fireball_Miss",
+  "DeathSoundEventId": "SFX_Fireball_Death",
+  "TimeToLive": 2.5,
+  "DeadTimeMiss": 0,
+  "ImpactSlowdown": 0,
+  "DepthShot": 1,
+  "DeathParticles": {
+    "SystemId": "Explosion_Medium"
+  },
+  "VerticalCenterShot": 0.1,
+  "HorizontalCenterShot": 0.1,
+  "HitParticles": {
+    "SystemId": "GreenOrbImpact"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "ItemPlayerAnimationsId": "Skeleton_Staff",
+    "ItemAnimationId": "CastSummon"
+  },
+  "$Comment": "Prepare Delay",
+  "RunTime": 1,
+  "Next": {
+    "Type": "LaunchProjectile",
+    "RunTime": 0.4,
+    "Effects": {
+      "WorldSoundEventId": "SFX_Unarmed_Swing"
+    },
+    "ProjectileId": "DrakonForge_Terminator_Orb",
+    "Tags": {
+      "AimingReference": []
+    },
+    "Next": {
+      "Type": "LaunchProjectile",
+      "RunTime": 0.4,
+      "Effects": {
+        "WorldSoundEventId": "SFX_Unarmed_Swing"
+      },
+      "ProjectileId": "DrakonForge_Terminator_Orb",
+      "Next": {
+        "Type": "LaunchProjectile",
+        "RunTime": 0.4,
+        "Effects": {
+          "WorldSoundEventId": "SFX_Unarmed_Swing"
+        },
+        "ProjectileId": "DrakonForge_Terminator_Orb"
+      }
+    }
+  }
+}
