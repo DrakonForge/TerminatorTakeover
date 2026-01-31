@@ -1,0 +1,20 @@
+{
+  "Interactions": [
+    {
+      "Type": "Chaining",
+      "ChainId": "Slashes",
+      "ChainingAllowance": 15,
+      "Next": [
+        "Outlander_Berserker_Axe_Swing_Down",
+        "Outlander_Berserker_Axe_Swing_Left",
+        "Outlander_Berserker_Axe_Swing_Right",
+        "Outlander_Berserker_Axe_Swing_Up_Left"
+      ]
+    }
+  ],
+  "Tags": {
+    "Attack": [
+      "Melee"
+    ]
+  }
+}

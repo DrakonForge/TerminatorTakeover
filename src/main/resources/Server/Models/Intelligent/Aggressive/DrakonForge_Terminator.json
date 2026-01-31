@@ -1,0 +1,191 @@
+{
+  "Parent": "Player",
+  "Model": "NPC/Undead/Zombie/Models/Model.blockymodel",
+  "Texture": "NPC/Undead/Zombie/Models/Zombie_Frost.png",
+  "EyeHeight": 1.45,
+  "CrouchOffset": -0.25,
+  "DefaultAttachments": [
+    {
+      "Model": "NPC/Undead/Skeleton/Models/Attachments/Cosmetics/Head/Eyes/Eyes.blockymodel",
+      "Texture": "NPC/Undead/Skeleton/Models/Attachments/Cosmetics/Head/Eyes/Eyes_Red.png"
+    }
+  ],
+  "AnimationSets": {
+    "Alerted": {
+      "Animations": [
+        {
+          "Animation": "NPC/Undead/Skeleton/Animations/Default/Alerted.blockyanim",
+          "Looping": false,
+          "SoundEventId": "SFX_Skeleton_Praetorian_Alerted"
+        }
+      ]
+    }
+  },
+  "RandomAttachmentSets": {
+    "Head": {
+      "Maid_Cap": {
+        "Model": "Cosmetics/Head/MaidCap.blockymodel",
+        "Texture": "NPC/Undead/Zombie/Models/Attachments/Head/MaidCap_Texture.png",
+        "Weight": 0.5
+      },
+      "Monk_Cap": {
+        "Model": "Cosmetics/Head/Hood.blockymodel",
+        "Texture": "NPC/Undead/Zombie/Models/Attachments/Head/Hood_Texture/Monk_Cap.png",
+        "Weight": 0.5
+      },
+      "null": {},
+      "Head_Bandage_Heavy_Black": {
+        "Model": "NPC/Undead/Zombie/Models/Attachments/Head/Haircuts/Head_Bandage.blockymodel",
+        "Texture": "NPC/Undead/Zombie/Models/Attachments/Head/Haircuts/Heavy_Bandage_Black.png"
+      },
+      "Head_Bandage_Light_Black": {
+        "Model": "NPC/Undead/Zombie/Models/Attachments/Head/Haircuts/Head_Bandage.blockymodel",
+        "Texture": "NPC/Undead/Zombie/Models/Attachments/Head/Haircuts/Light_Bandage_Black.png"
+      }
+    },
+    "Chest": {
+      "Tunic": {
+        "Model": "Cosmetics/Overtops/Tunic.blockymodel",
+        "Texture": "NPC/Undead/Zombie/Models/Attachments/Chest/Tunic_Textures/Ragged_Apprentice_Tunic.png"
+      },
+      "Maid_Dress": {
+        "Model": "Cosmetics/Overtops/Dress_Long_Sleeve_Asymetrical.blockymodel",
+        "Texture": "NPC/Undead/Zombie/Models/Attachments/Chest/Dress_Long_Sleeve_Asymetrical_Texture/Maid_Dress.png"
+      },
+      "Monk_Robe": {
+        "Model": "Cosmetics/Overtops/LongDress_Long_Sleeve.blockymodel",
+        "Texture": "NPC/Undead/Zombie/Models/Attachments/Chest/LongDress_Long_Sleeve_Texture/Monk_Robe.png"
+      },
+      "Tramp_Tunic": {
+        "Model": "Cosmetics/Overtops/Overtops_Short_Sleeve_Asymetrical.blockymodel",
+        "Texture": "NPC/Undead/Zombie/Models/Attachments/Chest/Overtop_Short_Sleeve_Textures/Tramp_Tunic.png"
+      },
+      "Tramp_Dress": {
+        "Model": "Cosmetics/Overtops/Dress.blockymodel",
+        "Texture": "NPC/Undead/Zombie/Models/Attachments/Chest/Dress_Textures/Tramp_Dress.png"
+      },
+      "Torn_Top": {
+        "Model": "Cosmetics/Undertops/Top.blockymodel",
+        "Texture": "NPC/Undead/Zombie/Models/Attachments/Chest/Top_Textures/Torn_Top.png"
+      },
+      "Ragged_TrenchCoat": {
+        "Model": "Cosmetics/Overtops/TrenchCoat_Asymetrical.blockymodel",
+        "Texture": "NPC/Undead/Zombie/Models/Attachments/Chest/TrenchCoat_Asymetrical_Textures/Ragged_TrenchCoat.png"
+      },
+      "Villager_Dress_01": {
+        "Model": "Cosmetics/Overtops/Dress_Long_Sleeve_Asymetrical.blockymodel",
+        "Texture": "NPC/Undead/Zombie/Models/Attachments/Chest/Dress_Long_Sleeve_Asymetrical_Texture/Villager_Dress_Greyscale.png",
+        "Weight": 0.25,
+        "GradientSet": "Rotten_Fabric",
+        "GradientId": "Blue"
+      },
+      "Villager_Dress_02": {
+        "Model": "Cosmetics/Overtops/Dress_Long_Sleeve_Asymetrical.blockymodel",
+        "Texture": "NPC/Undead/Zombie/Models/Attachments/Chest/Dress_Long_Sleeve_Asymetrical_Texture/Villager_Dress_Greyscale.png",
+        "GradientSet": "Rotten_Fabric",
+        "GradientId": "Brown",
+        "Weight": 0.25
+      },
+      "Villager_Dress_03": {
+        "Model": "Cosmetics/Overtops/Dress_Long_Sleeve_Asymetrical.blockymodel",
+        "Texture": "NPC/Undead/Zombie/Models/Attachments/Chest/Dress_Long_Sleeve_Asymetrical_Texture/Villager_Dress_Greyscale.png",
+        "GradientSet": "Rotten_Fabric",
+        "GradientId": "Yellow",
+        "Weight": 0.25
+      },
+      "Blouse_01": {
+        "Model": "Cosmetics/Overtops/Dress_Long_Sleeve_Asymetrical.blockymodel",
+        "Texture": "NPC/Undead/Zombie/Models/Attachments/Chest/Dress_Long_Sleeve_Asymetrical_Texture/Blouse_Greyscale.png",
+        "GradientSet": "Rotten_Fabric",
+        "GradientId": "Blue",
+        "Weight": 0.25
+      },
+      "Blouse_02": {
+        "Model": "Cosmetics/Overtops/Dress_Long_Sleeve_Asymetrical.blockymodel",
+        "Texture": "NPC/Undead/Zombie/Models/Attachments/Chest/Dress_Long_Sleeve_Asymetrical_Texture/Blouse_Greyscale.png",
+        "GradientSet": "Rotten_Fabric",
+        "GradientId": "Brown",
+        "Weight": 0.25
+      },
+      "Blouse_03": {
+        "Model": "Cosmetics/Overtops/Dress_Long_Sleeve_Asymetrical.blockymodel",
+        "Texture": "NPC/Undead/Zombie/Models/Attachments/Chest/Dress_Long_Sleeve_Asymetrical_Texture/Blouse_Greyscale.png",
+        "GradientSet": "Rotten_Fabric",
+        "GradientId": "Yellow",
+        "Weight": 0.25
+      },
+      "Dress_01": {
+        "Model": "Cosmetics/Overtops/Dress.blockymodel",
+        "Texture": "NPC/Undead/Zombie/Models/Attachments/Chest/Dress_Textures/Ragged_Dress_Greyscale.png",
+        "GradientSet": "Rotten_Fabric",
+        "GradientId": "Blue",
+        "Weight": 0.25
+      },
+      "Dress_02": {
+        "Model": "Cosmetics/Overtops/Dress.blockymodel",
+        "Texture": "NPC/Undead/Zombie/Models/Attachments/Chest/Dress_Textures/Ragged_Dress_Greyscale.png",
+        "GradientSet": "Rotten_Fabric",
+        "GradientId": "Brown",
+        "Weight": 0.25
+      },
+      "Dress_03": {
+        "Model": "Cosmetics/Overtops/Dress.blockymodel",
+        "Texture": "NPC/Undead/Zombie/Models/Attachments/Chest/Dress_Textures/Ragged_Dress_Greyscale.png",
+        "GradientSet": "Rotten_Fabric",
+        "GradientId": "Yellow",
+        "Weight": 0.25
+      },
+      "Villager_Shirt_01": {
+        "Model": "Cosmetics/Overtops/SleevedDresswJersey.blockymodel",
+        "Texture": "NPC/Undead/Zombie/Models/Attachments/Chest/SleevedDresswJersey_Textures/Villager_Ragged_Shirt_Greyscale.png",
+        "GradientSet": "Rotten_Fabric",
+        "GradientId": "Blue",
+        "Weight": 0.25
+      },
+      "Villager_Shirt_02": {
+        "Model": "Cosmetics/Overtops/SleevedDresswJersey.blockymodel",
+        "Texture": "NPC/Undead/Zombie/Models/Attachments/Chest/SleevedDresswJersey_Textures/Villager_Ragged_Shirt_Greyscale.png",
+        "GradientSet": "Rotten_Fabric",
+        "GradientId": "Brown",
+        "Weight": 0.25
+      },
+      "Villager_Shirt_03": {
+        "Model": "Cosmetics/Overtops/SleevedDresswJersey.blockymodel",
+        "Texture": "NPC/Undead/Zombie/Models/Attachments/Chest/SleevedDresswJersey_Textures/Villager_Ragged_Shirt_Greyscale.png",
+        "GradientSet": "Rotten_Fabric",
+        "GradientId": "Yellow",
+        "Weight": 0.25
+      }
+    },
+    "Shoes": {
+      "null": {},
+      "Single_Sock": {
+        "Model": "Cosmetics/Shoes/Single_Sock.blockymodel",
+        "Texture": "NPC/Undead/Zombie/Models/Attachments/Shoes/Single_Sock_Texture.png",
+        "Weight": 0.5
+      },
+      "Single_Boot": {
+        "Model": "Cosmetics/Shoes/Single_Boot.blockymodel",
+        "Texture": "NPC/Undead/Zombie/Models/Attachments/Shoes/Boots_Leather_Textures/Worned_Boot.png",
+        "Weight": 0.5
+      }
+    },
+    "Legs": {
+      "null": {},
+      "Brown_Trousers": {
+        "Model": "Cosmetics/Pants/Pants_Asymetrical.blockymodel",
+        "Texture": "NPC/Undead/Zombie/Models/Attachments/Legs/Pants_Asymetrical_Textures/Brown_Trousers.png",
+        "Weight": 0.5
+      },
+      "Dark_Trousers": {
+        "Model": "Cosmetics/Pants/Pants_Asymetrical.blockymodel",
+        "Texture": "NPC/Undead/Zombie/Models/Attachments/Legs/Pants_Asymetrical_Textures/Dark_Trousers.png",
+        "Weight": 0.5
+      },
+      "Brown_Short": {
+        "Model": "Cosmetics/Pants/Shorty_Slim.blockymodel",
+        "Texture": "NPC/Undead/Zombie/Models/Attachments/Legs/Shorty_Slim_Textures/Brown_Short.png"
+      }
+    }
+  }
+}

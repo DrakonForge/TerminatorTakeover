@@ -154,6 +154,18 @@
       "Value": "Root_NPC_Attack_Melee",
       "Description": "The attack to use."
     },
+    "RangedAttackSequence": {
+      "Value": "Component_Instruction_Attack_Sequence_Temp",
+      "Description": "The ranged attack sequence to use"
+    },
+    "DesiredRangedAttackDistanceRange": {
+      "Value": [ 10, 20 ],
+      "Description": "Desired ranged attack distance range"
+    },
+    "AttackSequence": {
+      "Value": "Component_Instruction_Attack_Sequence_Trork_Sentry",
+      "Description": "The attack sequence to use in combat"
+    },
     "AttackDistance": {
       "Value": 2,
       "Description": "The distance at which an NPC will execute attacks"
@@ -1448,7 +1460,7 @@
                 {
                   "Reference": "Component_Instruction_Intelligent_Chase",
                   "Modify": {
-                    "_ExportStates": [ "Search.Confused", "Search.Confused", "Idle" ],
+                    "_ExportStates": [ "Search.Confused", "Search.Confused", "Search.Confused" ],
                     "ViewRange": { "Compute": "AlertedRange" },
                     "HearingRange": { "Compute": "HearingRange" },
                     "RelativeSpeed": { "Compute": "ChaseRelativeSpeed" }
@@ -1471,48 +1483,124 @@
               }
             },
             {
-              "Continue": true,
               "Sensor": {
-                "Type": "Target",
-                "Range": { "Compute": "AttackDistance" },
-                "Filters": [
-                  {
-                    "Type": "LineOfSight"
-                  }
-                ]
+                "Type": "State",
+                "State": ".Ranged"
               },
-              "ActionsBlocking": true,
-              "Actions": [
+              "Instructions": [
                 {
-                  "$Comment": "TODO: Brief delay before attack so NPC can stop moving. Do we  need it?",
-                  "Type": "Timeout",
-                  "Delay": { "Compute": "CombatAttackPreDelay" }
+                  "Reference": "Component_Instruction_Clear_Status_Animation",
+                  "Modify": { }
                 },
                 {
-                  "Type": "Attack",
-                  "Attack": { "Compute": "Attack" },
-                  "AttackPauseRange": { "Compute": "AttackPauseRange" }
+                  "Sensor": {
+                    "Type": "Target",
+                    "Range": 3,
+                    "Filters": [
+                      {
+                        "Type": "LineOfSight"
+                      }
+                    ]
+                  },
+                  "Actions": [
+                    {
+                      "Type": "State",
+                      "State": ".Melee"
+                    }
+                  ]
                 },
                 {
-                  "$Comment": "Brief delay to prevent the NPC potentially strafing/backing away and missing the shot.",
-                  "Type": "Timeout",
-                  "Delay": { "Compute": "CombatAttackPostDelay" }
+                  "Reference": "Component_Instruction_Target_Adjusted_Attack",
+                  "Modify": {
+                    "TargetSwitchTimer": [ 5, 5 ],
+                    "AttackSequence": { "Compute": "RangedAttackSequence" },
+                    "AttackDistance": { "Compute": "AlertedRange" },
+                    "TargetRange": 5,
+                    "CombatRelativeTurnSpeed": { "Compute": "CombatRelativeTurnSpeed" },
+                    "DesiredDistanceRange": { "Compute": "DesiredRangedAttackDistanceRange" },
+                    "RelativeForwardsSpeed": 1,
+                    "RelativeBackwardsSpeed": 0.4,
+                    "MaintainDistanceRange": { "Compute": "AlertedRange" }
+                  }
                 },
                 {
-                  "Type": "TimerStart",
-                  "Name": "Combat_Back_Off",
-                  "StartValueRange": { "Compute": "CombatBackOffDurationRange" },
-                  "RestartValueRange": { "Compute": "CombatBackOffDurationRange" }
-                },
-                {
-                  "Type": "TimerRestart",
-                  "Name": "Combat_Back_Off"
+                  "Sensor": {
+                    "Type": "Not",
+                    "Sensor": {
+                      "Type": "Target",
+                      "Range": { "Compute": "AlertedRange" },
+                      "Filters": [
+                        {
+                          "Type": "LineOfSight"
+                        }
+                      ]
+                    }
+                  },
+                  "Actions": [
+                    {
+                      "Type": "State",
+                      "State": "Idle"
+                    }
+                  ]
                 }
-              ],
-              "HeadMotion": {
-                "Type": "Aim",
-                "RelativeTurnSpeed": { "Compute": "CombatRelativeTurnSpeed" }
-              }
+              ]
+            },
+            {
+              "Sensor": {
+                "Type": "State",
+                "State": ".Melee"
+              },
+              "Instructions": [
+                {
+                  "Reference": "Component_Instruction_Target_Adjusted_Attack_Melee",
+                  "Modify": {
+                    "TargetSwitchTimer": [ 5, 5 ],
+                    "AttackSequence": { "Compute": "AttackSequence" },
+                    "AttackDistance": { "Compute": "AttackDistance" },
+                    "TargetRange": 4,
+                    "CombatRelativeTurnSpeed": { "Compute": "CombatRelativeTurnSpeed" }
+                  }
+                },
+                {
+                  "Sensor": {
+                    "Type": "Target",
+                    "Range": { "Compute": "AlertedRange" },
+                    "Filters": [
+                      {
+                        "Type": "LineOfSight"
+                      }
+                    ]
+                  },
+                  "Actions": [
+                    {
+                      "Type": "Timeout",
+                      "Delay": [ 1, 1 ],
+                      "Action": {
+                        "Type": "State",
+                        "State": ".Ranged"
+                      }
+                    }
+                  ],
+                  "HeadMotion": {
+                    "Type": "Watch"
+                  }
+                },
+                {
+                  "Sensor": {
+                    "Type": "Any"
+                  },
+                  "Actions": [
+                    {
+                      "Type": "Timeout",
+                      "Delay": [ 1, 1 ],
+                      "Action": {
+                        "Type": "State",
+                        "State": "Idle"
+                      }
+                    }
+                  ]
+                }
+              ]
             },
             {
               "Continue": true,
