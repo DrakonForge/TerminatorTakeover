@@ -2,7 +2,7 @@
   "Type": "Abstract",
   "Debug": "DisplayState",
   "StartState": "Idle",
-  "DefaultNPCAttitude": "Ignore",
+  "DefaultNPCAttitude": "Hostile",
   "DefaultPlayerAttitude": "Hostile",
   "AttitudeGroup": {
     "Compute": "AttitudeGroup"
@@ -293,8 +293,7 @@
                       "NeutralPlayer",
                       "NeutralPlayer",
                       "Revered",
-                      "Warn",
-                      "DroppedMeat"
+                      "Warn"
                     ],
                     "MotionComponent": {
                       "Compute": "IdleMotionComponent"
@@ -322,9 +321,7 @@
                     },
                     "ChestBlockSet": {
                       "Compute": "ChestBlockSet"
-                    },
-                    "SleepsAtNight": false,
-                    "StayAtPost": false
+                    }
                   }
                 }
               ]
@@ -666,51 +663,6 @@
                 },
                 "AlertedRange": {
                   "Compute": "AlertedRange"
-                }
-              }
-            }
-          ]
-        },
-        {
-          "Sensor": {
-            "Type": "State",
-            "State": "DroppedMeat"
-          },
-          "Instructions": [
-            {
-              "Reference": "Component_Trork_Instruction_Dropped_Meat",
-              "Modify": {
-                "_ExportStates": [
-                  "Idle",
-                  "Alerted",
-                  "Chase",
-                  "Search",
-                  "Warn",
-                  "NeutralPlayer",
-                  "NeutralPlayer",
-                  "Revered",
-                  "DroppedMeat"
-                ],
-                "ViewRange": {
-                  "Compute": "ViewRange"
-                },
-                "ViewSector": {
-                  "Compute": "ViewSector"
-                },
-                "HearingRange": {
-                  "Compute": "HearingRange"
-                },
-                "AlertedRange": {
-                  "Compute": "AlertedRange"
-                },
-                "TargetGroups": {
-                  "Compute": "TargetGroups"
-                },
-                "UnderlingGroups": {
-                  "Compute": "UnderlingGroups"
-                },
-                "ChestBlockSet": {
-                  "Compute": "ChestBlockSet"
                 }
               }
             }
