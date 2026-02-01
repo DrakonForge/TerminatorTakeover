@@ -35,11 +35,6 @@
       },
       {
         "Type": "Attack",
-        "Attack": "DrakonForge_Terminator_Swing_Down",
-        "AttackPauseRange": [ 0.5, 1.5 ]
-      },
-      {
-        "Type": "Attack",
         "Attack": "DrakonForge_Terminator_Swing_Up_Left",
         "AttackPauseRange": [ 0.5, 1.5 ]
       }

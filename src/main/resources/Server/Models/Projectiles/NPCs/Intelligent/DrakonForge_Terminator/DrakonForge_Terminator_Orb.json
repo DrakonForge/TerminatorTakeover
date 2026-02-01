@@ -43,7 +43,7 @@
   "DefaultAttachments": [
     {
       "Model": "Items/Projectiles/Fireball.blockymodel",
-      "Texture": "Items/Projectiles/Fireball_Textures/Fireball.png"
+      "Texture": "Items/Projectiles/Fireball_Textures/DrakonForge_Terminator_Orb.png"
     }
   ]
 }

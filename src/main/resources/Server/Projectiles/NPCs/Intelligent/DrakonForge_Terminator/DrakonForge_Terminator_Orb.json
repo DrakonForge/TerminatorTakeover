@@ -17,11 +17,11 @@
   "ImpactSlowdown": 0,
   "DepthShot": 1,
   "DeathParticles": {
-    "SystemId": "Explosion_Medium"
+    "SystemId": "DrakonForge_Terminator_Orb"
   },
   "VerticalCenterShot": 0.1,
   "HorizontalCenterShot": 0.1,
   "HitParticles": {
-    "SystemId": "GreenOrbImpact"
+    "SystemId": "DrakonForge_Terminator_Orb"
   }
 }

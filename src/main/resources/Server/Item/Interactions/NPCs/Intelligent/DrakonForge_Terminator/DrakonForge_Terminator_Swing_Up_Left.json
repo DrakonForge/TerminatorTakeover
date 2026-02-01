@@ -31,13 +31,23 @@
             "HitEntity": {
               "Interactions": [
                 {
-                  "Type": "Replace",
-                  "DefaultValue": {
-                    "Interactions": [
-                      "NPC_Attack_Melee_Damage"
-                    ]
+                  "Type": "DamageEntity",
+                  "DamageCalculator": {
+                    "BaseDamage": {
+                      "Physical": 30
+                    }
                   },
-                  "Var": "Melee_Damage"
+                  "Effects": {
+                    "CameraEffect": "Impact_Light"
+                  },
+                  "DamageEffects": {
+                    "WorldSoundEventId": "SFX_DrakonForge_Terminator_Hit",
+                    "WorldParticles": [
+                      {
+                        "SystemId": "Impact_Blade_01"
+                      }
+                    ]
+                  }
                 }
               ]
             },
@@ -69,10 +79,10 @@
                     "Yaw": 0
                   },
                   "TargetNodeName": "Handle",
-                  "TrailId": "Medium_Default"
+                  "TrailId": "Medium_Sword_Strong"
                 }
               ],
-              "WorldSoundEventId": "SFX_Light_Melee_T2_Swing"
+              "WorldSoundEventId": "SFX_Battleaxe_T1_Swing"
             }
           }
         ]

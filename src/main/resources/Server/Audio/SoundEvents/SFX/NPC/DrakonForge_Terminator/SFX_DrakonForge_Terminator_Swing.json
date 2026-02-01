@@ -1,0 +1,24 @@
+{
+  "Layers": [
+    {
+      "Files": [
+        "Sounds/Weapons/Battleaxe/Battleaxe_T1_Swing_01.ogg",
+        "Sounds/Weapons/Battleaxe/Battleaxe_T1_Swing_02.ogg",
+        "Sounds/Weapons/Battleaxe/Battleaxe_T1_Swing_03.ogg",
+        "Sounds/Weapons/Battleaxe/Battleaxe_T1_Swing_04.ogg",
+        "Sounds/Weapons/Battleaxe/Battleaxe_T1_Swing_05.ogg"
+      ],
+      "RandomSettings": {
+        "MinPitch": -2,
+        "MaxPitch": 1,
+        "MinVolume": -1
+      },
+      "StartDelay": 0,
+      "Volume": 1.0
+    }
+  ],
+  "Volume": 0,
+  "PreventSoundInterruption": true,
+  "AudioCategory": "AudioCat_Battleaxe",
+  "Parent": "SFX_Attn_Moderate"
+}

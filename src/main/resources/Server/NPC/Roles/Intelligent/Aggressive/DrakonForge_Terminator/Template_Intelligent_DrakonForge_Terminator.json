@@ -1765,12 +1765,41 @@
                   ]
                 },
                 {
+                  "Sensor": {
+                    "Type": "Target",
+                    "Range": {
+                      "Compute": "AlertedRange"
+                    },
+                    "Filters": [
+                      {
+                        "Type": "LineOfSight"
+                      }
+                    ]
+                  },
+                  "Actions": [
+                    {
+                      "Type": "Timeout",
+                      "Delay": [
+                        0.5,
+                        0.5
+                      ],
+                      "Action": {
+                        "Type": "State",
+                        "State": ".Ranged"
+                      }
+                    }
+                  ],
+                  "HeadMotion": {
+                    "Type": "Watch"
+                  }
+                },
+                {
                   "Reference": "Component_Instruction_Intelligent_Chase",
                   "Modify": {
                     "_ExportStates": [
                       "Search.Confused",
                       "Search.Confused",
-                      "Search.Confused"
+                      "Idle"
                     ],
                     "ViewRange": {
                       "Compute": "AlertedRange"
@@ -2355,7 +2384,7 @@
                 {
                   "Sensor": {
                     "Type": "Target",
-                    "Range": 10,
+                    "Range": 15,
                     "Filters": [
                       {
                         "Type": "LineOfSight"
@@ -2365,7 +2394,7 @@
                   "Actions": [
                     {
                       "Type": "State",
-                      "State": ".Melee"
+                      "State": ".Chase"
                     }
                   ]
                 },

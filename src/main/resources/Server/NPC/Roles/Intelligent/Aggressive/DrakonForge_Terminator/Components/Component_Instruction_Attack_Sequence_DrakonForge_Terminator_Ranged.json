@@ -32,9 +32,7 @@
     ],
     "HeadMotion": {
       "Type": "Aim",
-      "RelativeTurnSpeed": { "Compute": "CombatRelativeTurnSpeed" },
-      "HitProbability": 0.6,
-      "Spread": 0.7
+      "RelativeTurnSpeed": { "Compute": "CombatRelativeTurnSpeed" }
     }
   },
   "Type": "Component"

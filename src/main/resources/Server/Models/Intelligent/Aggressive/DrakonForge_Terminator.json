@@ -22,27 +22,6 @@
     }
   },
   "RandomAttachmentSets": {
-    "Head": {
-      "Maid_Cap": {
-        "Model": "Cosmetics/Head/MaidCap.blockymodel",
-        "Texture": "NPC/Undead/Zombie/Models/Attachments/Head/MaidCap_Texture.png",
-        "Weight": 0.5
-      },
-      "Monk_Cap": {
-        "Model": "Cosmetics/Head/Hood.blockymodel",
-        "Texture": "NPC/Undead/Zombie/Models/Attachments/Head/Hood_Texture/Monk_Cap.png",
-        "Weight": 0.5
-      },
-      "null": {},
-      "Head_Bandage_Heavy_Black": {
-        "Model": "NPC/Undead/Zombie/Models/Attachments/Head/Haircuts/Head_Bandage.blockymodel",
-        "Texture": "NPC/Undead/Zombie/Models/Attachments/Head/Haircuts/Heavy_Bandage_Black.png"
-      },
-      "Head_Bandage_Light_Black": {
-        "Model": "NPC/Undead/Zombie/Models/Attachments/Head/Haircuts/Head_Bandage.blockymodel",
-        "Texture": "NPC/Undead/Zombie/Models/Attachments/Head/Haircuts/Light_Bandage_Black.png"
-      }
-    },
     "Chest": {
       "Tunic": {
         "Model": "Cosmetics/Overtops/Tunic.blockymodel",
