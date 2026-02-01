@@ -1,15 +1,18 @@
 {
     "Group": "DrakonForge",
-    "Name": "ModJam1",
+    "Name": "TerminatorTakeover",
     "Version": "1.0.0",
     "Description": "Drakon's entry for the first ever Hytale Modding ModJam",
     "Authors": [
         {
             "Name": "Drakon",
             "Url": "https://github.com/Drakonkinst"
+        },
+        {
+            "Name": "FurbyMom"
         }
     ],
-    "Website": "https://github.com/DrakonForge",
+    "Website": "https://github.com/DrakonForge/TerminatorTakeover",
     "ServerVersion": "*",
     "Dependencies": {
         

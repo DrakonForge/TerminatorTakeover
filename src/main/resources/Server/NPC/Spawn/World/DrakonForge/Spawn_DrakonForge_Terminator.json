@@ -1,0 +1,31 @@
+{
+  "$Comment": "Terminator spawns somewhat rarely in select medium and upper-tier areas in each zone",
+  "Environments": [
+    "Env_Zone1_Forests",
+    "Env_Zone1_Mountains",
+    "Env_Zone1_Autumn",
+    "Env_Zone1_Swamps",
+    "Env_Zone2_Plateaus",
+    "Env_Zone2_Scrub",
+    "Env_Zone2_Deserts",
+    "Env_Zone2_Oasis",
+    "Env_Zone3_Forests",
+    "Env_Zone3_Mountains",
+    "Env_Zone3_Glacial",
+    "Env_Zone4_Wastes",
+    "Env_Zone4_Shores",
+    "Env_Zone4_Volcanoes",
+    "Env_Zone4_Forests"
+  ],
+  "NPCs": [
+    {
+      "Weight": 10,
+      "SpawnBlockSet": "Soil",
+      "Id": "DrakonForge_Terminator"
+    }
+  ],
+  "DayTimeRange": [
+    0,
+    24
+  ]
+}

@@ -40,7 +40,7 @@
       },
       {
         "Type": "Attack",
-        "Attack": "Golem_Firesteel_Spin",
+        "Attack": "DrakonForge_Terminator_Spin",
         "AttackPauseRange": [ 0.5, 1.5 ]
       }
     ],

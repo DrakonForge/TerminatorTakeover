@@ -50,7 +50,7 @@
                     "Type": "DamageEntity",
                     "DamageCalculator": {
                       "BaseDamage": {
-                        "Physical": 20
+                        "Physical": 25
                       }
                     },
                     "Effects": {
@@ -74,7 +74,7 @@
                   "Type": "DamageEntity",
                   "DamageCalculator": {
                     "BaseDamage": {
-                      "Physical": 20
+                      "Physical": 25
                     }
                   },
                   "Effects": {

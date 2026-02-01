@@ -12,7 +12,7 @@
   "BounceSoundEventId": "SFX_Fireball_Bounce",
   "MissSoundEventId": "SFX_Fireball_Miss",
   "DeathSoundEventId": "SFX_Fireball_Death",
-  "TimeToLive": 2.5,
+  "TimeToLive": 1.5,
   "DeadTimeMiss": 0,
   "ImpactSlowdown": 0,
   "DepthShot": 1,
