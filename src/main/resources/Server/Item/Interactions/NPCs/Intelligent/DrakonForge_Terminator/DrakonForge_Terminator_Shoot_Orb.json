@@ -5,12 +5,12 @@
     "ItemAnimationId": "CastSummon"
   },
   "$Comment": "Prepare Delay",
-  "RunTime": 1,
+  "RunTime": 1.05,
   "Next": {
     "Type": "LaunchProjectile",
-    "RunTime": 0.4,
+    "RunTime": 0.35,
     "Effects": {
-      "WorldSoundEventId": "SFX_Unarmed_Swing"
+      "WorldSoundEventId": "SFX_Staff_Fire_Shoot"
     },
     "ProjectileId": "DrakonForge_Terminator_Orb",
     "Tags": {
@@ -18,16 +18,16 @@
     },
     "Next": {
       "Type": "LaunchProjectile",
-      "RunTime": 0.4,
+      "RunTime": 0.35,
       "Effects": {
-        "WorldSoundEventId": "SFX_Unarmed_Swing"
+        "WorldSoundEventId": "SFX_Staff_Fire_Shoot"
       },
       "ProjectileId": "DrakonForge_Terminator_Orb",
       "Next": {
         "Type": "LaunchProjectile",
-        "RunTime": 0.4,
+        "RunTime": 0.35,
         "Effects": {
-          "WorldSoundEventId": "SFX_Unarmed_Swing"
+          "WorldSoundEventId": "SFX_Staff_Fire_Shoot"
         },
         "ProjectileId": "DrakonForge_Terminator_Orb"
       }

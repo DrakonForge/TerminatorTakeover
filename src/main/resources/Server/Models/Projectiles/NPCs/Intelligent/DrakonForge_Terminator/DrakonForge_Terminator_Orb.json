@@ -13,8 +13,8 @@
       "Z": -0.1
     }
   },
-  "MinScale": 1.0,
-  "MaxScale": 1.2,
+  "MinScale": 0.5,
+  "MaxScale": 0.6,
   "AnimationSets": {
     "Idle": {
       "Animations": [
@@ -24,6 +24,9 @@
         }
       ]
     }
+  },
+  "Light": {
+    "Color": "#f03333"
   },
   "Trails": [
     {

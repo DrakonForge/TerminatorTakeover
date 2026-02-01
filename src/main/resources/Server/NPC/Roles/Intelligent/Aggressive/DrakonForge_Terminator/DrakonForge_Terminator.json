@@ -2,12 +2,12 @@
   "Type": "Variant",
   "Reference": "Template_Intelligent_DrakonForge_Terminator",
   "Modify": {
-    "MaxHealth": 160,
+    "MaxHealth": 200,
     "MaxSpeed": 5,
     "DefaultNPCAttitude": "Hostile",
     "DefaultPlayerAttitude": "Hostile",
     "RunThreshold": 0.7,
-    "ChaseRelativeSpeed": 1,
+    "ChaseRelativeSpeed": 1.2,
     "ViewRange": 20,
     "HearingRange": 10,
     "AlertedRange": 20,
@@ -35,17 +35,17 @@
     },
     "AttackSequence": "Component_Instruction_Attack_Sequence_DrakonForge_Terminator_Melee",
     "RangedAttackSequence": "Component_Instruction_Attack_Sequence_DrakonForge_Terminator_Ranged",
-    "AttackDistance": 2.5,
+    "AttackDistance": 2,
     "AttackPauseRange": [
-      1,
-      2.5
+      0.5,
+      1.5
     ],
     "CombatAttackPreDelay": [
       0.05,
       0.05
     ],
     "CombatRelativeTurnSpeed": 2,
-    "CombatBehaviorDistance": 4,
+    "CombatBehaviorDistance": 2,
     "CombatBackOffAfterAttack": false,
     "CombatStrafeWeight": 0,
     "CombatDirectWeight": 0,
@@ -75,7 +75,7 @@
   },
   "Parameters": {
     "NameTranslationKey": {
-      "Value": "server.npcRoles.DrakonForge_Terminator.name",
+      "Value": "modjam.npcRoles.DrakonForge_Terminator.name",
       "Description": "Translation key for NPC name display"
     }
   }

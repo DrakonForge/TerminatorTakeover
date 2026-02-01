@@ -3,11 +3,11 @@
   "Interface": "Hytale.Instruction.AttackSequence",
   "Parameters": {
     "AttackDistance": {
-      "Value": 2.5,
+      "Value": 3,
       "Description": "The distance at which an NPC will execute attacks"
     },
     "CombatRelativeTurnSpeed": {
-      "Value": 1.5,
+      "Value": 2.0,
       "Description": "Modifier that decides turn speed difference in combat"
     }
   },
@@ -36,6 +36,11 @@
       {
         "Type": "Attack",
         "Attack": "DrakonForge_Terminator_Swing_Up_Left",
+        "AttackPauseRange": [ 0.5, 1.5 ]
+      },
+      {
+        "Type": "Attack",
+        "Attack": "Golem_Firesteel_Spin",
         "AttackPauseRange": [ 0.5, 1.5 ]
       }
     ],

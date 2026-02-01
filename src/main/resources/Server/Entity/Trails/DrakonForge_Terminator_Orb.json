@@ -10,7 +10,7 @@
     "Color": "rgba(#e30b0b, 0.733)",
     "Width": 0.1
   },
-  "LightInfluence": 0.5,
+  "LightInfluence": 0.25,
   "Smooth": true,
   "RenderMode": "BlendLinear"
 }
