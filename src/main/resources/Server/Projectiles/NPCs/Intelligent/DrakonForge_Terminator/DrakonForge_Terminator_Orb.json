@@ -7,7 +7,7 @@
   "MuzzleVelocity": 50,
   "TerminalVelocity": 100,
   "Gravity": 0,
-  "Damage": 15,
+  "Damage": 30,
   "DeathEffectsOnHit": true,
   "BounceSoundEventId": "SFX_Fireball_Bounce",
   "MissSoundEventId": "SFX_Fireball_Miss",

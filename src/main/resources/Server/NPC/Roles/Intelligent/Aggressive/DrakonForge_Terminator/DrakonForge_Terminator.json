@@ -7,7 +7,7 @@
     "DefaultNPCAttitude": "Hostile",
     "DefaultPlayerAttitude": "Hostile",
     "RunThreshold": 0.7,
-    "ChaseRelativeSpeed": 1.2,
+    "ChaseRelativeSpeed": 1.0,
     "ViewRange": 20,
     "HearingRange": 10,
     "AlertedRange": 20,
