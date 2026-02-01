@@ -1,7 +1,7 @@
 {
   "Type": "Abstract",
   "StartState": "Idle",
-  "Debug": "DisplayState,DisplayTarget,PathFinder",
+  "$Debug": "DisplayState,DisplayTarget,PathFinder",
   "Parameters": {
     "Appearance": {
       "Value": "Trork_Hunter",
