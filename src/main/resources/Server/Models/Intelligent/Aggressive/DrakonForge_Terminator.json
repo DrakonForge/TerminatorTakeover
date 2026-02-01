@@ -19,6 +19,15 @@
           "SoundEventId": "SFX_Skeleton_Praetorian_Alerted"
         }
       ]
+    },
+    "Death": {
+      "Animations": [
+        {
+          "Animation": "Characters/Animations/Damage/Default/Death.blockyanim",
+          "Looping": false,
+          "SoundEventId": "SFX_DrakonForge_Terminator_Death"
+        }
+      ]
     }
   }
 }
