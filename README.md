@@ -14,7 +14,7 @@ Oh, and it is hostile to everything. Yes, *everything*. If you come across a fie
 
 Their sudden appearance in Orbis raises mysterious questions. Who originally constructed it? Where did it come from? How has it managed to spread across nearly every zone in Orbis? Alas, most adventurers who attempt to study Terminators in closer detail end up taking the quick route back to their workbenches.
 
-## Features
+## Design Notes
 
 Terminators are designed as a mid-game challenge and will prove a threat even to highly-geared adventurers. They appear in select biomes across all zones, typically where more challenging enemies already spawn.
 
