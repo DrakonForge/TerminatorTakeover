@@ -1,9 +1,7 @@
 {
   "Parent": "Player",
-  "Model": "NPC/Undead/Zombie/Models/Model.blockymodel",
-  "Texture": "NPC/Undead/Zombie/Models/Zombie_Frost.png",
-  "EyeHeight": 1.45,
-  "CrouchOffset": -0.25,
+  "Model": "NPC/Intelligent/DrakonForge_Terminator/DrakonForge_Terminator.blockymodel",
+  "Texture": "NPC/Intelligent/DrakonForge_Terminator/DrakonForge_Terminator.png",
   "DefaultAttachments": [
     {
       "Model": "NPC/Undead/Skeleton/Models/Attachments/Cosmetics/Head/Eyes/Eyes.blockymodel",
