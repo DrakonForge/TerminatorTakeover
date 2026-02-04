@@ -1,6 +1,11 @@
 # Terminator Takeover
 
-[GitHub](https://github.com/DrakonForge/TerminatorTakeover) | Modtale (Pending)
+[GitHub](https://github.com/DrakonForge/TerminatorTakeover) | [Modtale](https://modtale.net/mod/terminator-takeover)
+
+<p align="center">
+  <img height="512" alt="TerminatorTakeover_2" src="https://github.com/user-attachments/assets/04c091dc-4658-4c6b-9f44-b7f55fc8b37c" />
+</p>
+
 
 Are Hytale's normal enemies starting to get old? Wish there were more giant evil death robots in the world to spice things up.
 
@@ -13,6 +18,10 @@ Its skeletal form is reminiscent of other Undead, but don't be fooled—it is st
 Oh, and it is hostile to everything. Yes, *everything*. If you come across a field of scattered mob drops, watch out—odds are a Terminator might still be nearby, with its murderous cravings no less sated.
 
 Their sudden appearance in Orbis raises mysterious questions. Who originally constructed it? Where did it come from? How has it managed to spread across nearly every zone in Orbis? Alas, most adventurers who attempt to study Terminators in closer detail end up taking the quick route back to their workbenches.
+
+<p align="center">
+  <img width="256" height="256" alt="Terminator_Takeover_Logo" src="https://github.com/user-attachments/assets/eb8f086b-dda8-4556-aed2-c39ecbcf8aab" />
+</p>
 
 ## Design Notes
 
